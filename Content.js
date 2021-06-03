@@ -13,15 +13,19 @@ function sleepTime(timeS) {
 function clicado(t) {
     if (t.target) {
         x = t.target.parentElement
-        links.push(t.target.innerHTML)
+        if(x.tagName=="P"){
+          links.push(t.target.innerHTML)
+        }
     } else {
         x = t        
     }
-    x = x.parentElement.parentElement.parentElement.parentElement;
-    x.classList.add("clicado")
-    x.classList.remove('iUXhKY');
-    x.classList.add("iUXhKY")
-    //x.style.cssText = 'background-color: #101014; tra1nsition:ease background-color .1s;';
+    if(x.tagName=="P"){
+      x = x.parentElement.parentElement.parentElement.parentElement;
+      x.classList.add("clicado")
+      x.classList.remove('iUXhKY');
+      x.classList.add("iUXhKY")
+      //x.style.cssText = 'background-color: #101014; tra1nsition:ease background-color .1s;';
+    }
 }
 
 async function addLink(mensagem) {
