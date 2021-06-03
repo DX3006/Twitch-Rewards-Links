@@ -1,7 +1,13 @@
 ![Logo](logo.png)
 # Twitch Rewards Links
-This is a Chrome Extension that adds a link to the Twitch Rewards page.
+> This is a Chrome Extension add links to the Twitch rewards page
 
-When these links are clicked the extension makes a mark so that it is possible to know which links you already seen.
+ 
+## Functions
+> Add links to the Twitch rewards page
+That way you can click it instead of copying and pasting.
 
-[Download on Chrome Web Store](https://chrome.google.com/webstore/detail/twitch-rewards-links/acolpfebjhapfflnpilmbfknbblchnom)
+> Highlights a redemption once you click a link.
+That way it's easier to know which redemption links you've already clicked.
+
+### [Download on Chrome Web Store](https://chrome.google.com/webstore/detail/twitch-rewards-links/acolpfebjhapfflnpilmbfknbblchnom)
