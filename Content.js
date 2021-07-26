@@ -48,7 +48,7 @@ async function addLink(mensagem) {
 async function run() {
     var divStyle = document.createElement("div")
     divStyle.id = "divStyle"
-    divStyle.innerHTML = "<style>.reward-queue-body {max-width: 800px;}.iUXhKY{padding: 1rem;}.clicado{background-color:  #101014 !important;transition:ease background-color .1s}.kmoRtg_alt{margin-top: 0.5rem !important; padding-left: 1rem !important;}</style>"
+    divStyle.innerHTML = "<style>.redemption-list-item__body {max-width: 800px;}.quyyb{padding: 1rem;}.clicado{background-color:  #101014 !important;transition:ease background-color .1s}.kmoRtg_alt{margin-top: 0.5rem !important; padding-left: 1rem !important;}</style>"
     document.body.appendChild(divStyle)
 
     while (true) {
