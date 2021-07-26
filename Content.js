@@ -52,13 +52,13 @@ async function run() {
     document.body.appendChild(divStyle)
 
     while (true) {
-        d = document.getElementsByClassName("sc-AxjAm kmoRtg redemption-list-item__context")
+        d = document.getElementsByClassName("sc-AxiKw hBvfmb redemption-list-item__context")
         while (d.length > 0) {
-            ccs = d[0].getElementsByClassName("sc-AxirZ coyJWM")
+            ccs = d[0].getElementsByClassName("sc-AxgMl izgKVL")
             mensagem = ccs[0]
             if (mensagem) addLink(mensagem);
             d[0].classList.add("kmoRtg_alt")
-            d[0].classList.remove("kmoRtg")
+            d[0].classList.remove("hBvfmb")
         }
         //console.log(links)
         await sleepTime(500);

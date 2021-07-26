@@ -2,7 +2,7 @@
     "manifest_version":2,
     "name":"Twitch Rewards Links",
     "description":"Add links to the Twitch rewards page",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "content_scripts":[
         {
             "matches":["https://www.twitch.tv/popout/*/reward-queue"],
