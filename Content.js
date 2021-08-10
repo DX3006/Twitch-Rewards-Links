@@ -48,17 +48,17 @@ async function addLink(mensagem) {
 async function run() {
     var divStyle = document.createElement("div")
     divStyle.id = "divStyle"
-    divStyle.innerHTML = "<style>.redemption-list-item__body {max-width: 800px;}.quyyb{padding: 1rem;}.clicado{background-color:  #101014 !important;transition:ease background-color .1s}.kmoRtg_alt{margin-top: 0.5rem !important; padding-left: 1rem !important;}</style>"
+    divStyle.innerHTML = "<style>.redemption-list-item__body {max-width: 800px;padding: 1rem;}.clicado{background-color:  #101014 !important;transition:ease background-color .1s}.kmoRtg_alt{margin-top: 0.5rem !important; padding-left: 1rem !important;}</style>"
     document.body.appendChild(divStyle)
 
     while (true) {
-        d = document.getElementsByClassName("sc-AxiKw hBvfmb redemption-list-item__context")
+        d = document.getElementsByClassName("Layout-sc-nxg1ff-0 fyCODJ redemption-list-item__context")
         while (d.length > 0) {
-            ccs = d[0].getElementsByClassName("sc-AxgMl izgKVL")
+            ccs = d[0].getElementsByClassName("CoreText-sc-cpl358-0 dcwJzv")
             mensagem = ccs[0]
             if (mensagem) addLink(mensagem);
             d[0].classList.add("kmoRtg_alt")
-            d[0].classList.remove("hBvfmb")
+            d[0].classList.remove("fyCODJ")
         }
         //console.log(links)
         await sleepTime(500);
