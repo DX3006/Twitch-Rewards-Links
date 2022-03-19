@@ -26,6 +26,13 @@ function clicado(t) {
     }
 }
 
+function removeHTMLentities(text){
+    return text.replace(/[\u00A0-\u9999"'<>\&]/g, function(i) {
+        return '&#'+i.charCodeAt(0)+'; ';
+     });
+}
+
+
 async function addLink(mensagem) {
     n = mensagem.innerHTML.match(re)
     if (n) {
@@ -35,7 +42,10 @@ async function addLink(mensagem) {
                 clicado(mensagem)
             }
             x = a.lastIndexOf(">") + 1
-            a = a.substring(0, x) + a.substring(x).replace(n[c2], '<a  href="' + n[c2] + '" target="_blank" >' + n[c2] + '</a>')
+            link = n[c2]
+            if( !/https:\/\//.test(link) ) link= "https:\/\/"+link
+            //link=removeHTMLentities(link)
+            a = a.substring(0, x) + a.substring(x).replace(n[c2], '<a  href="' + link + '" target="_blank" >' + n[c2] + '</a>')
         }
         mensagem.innerHTML = a;
         mensagem.addEventListener('click', clicado)
